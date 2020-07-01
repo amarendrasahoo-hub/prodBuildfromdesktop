@@ -57,7 +57,7 @@ export class LoginService {
     userAuthentication(user: Login) {
     //  this.http.post('http://10.20.11.46:3000/angular_auth',user)
       console.log("user authentication :",user);
-      this.http.post('http://10.20.33.79:3000/activeDir/angular_auth',user)
+      this.http.post('http://59.145.135.45:3000/activeDir/angular_auth',user)
       .subscribe(( empdata: EmployeeData) => {
         this.employee = empdata;
 //        window.alert("inside success");
